@@ -1,6 +1,6 @@
 import React from "react";
 const Projects = () => {
-	return <section>Projects!</section>;
+	return <section id="Projects">Projects!</section>;
 };
 
 export default Projects;

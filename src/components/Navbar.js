@@ -23,8 +23,12 @@ const Navbar = (props) => {
 			</div>
 
 			<ul className="mainNavbar" id="menu">
-				{props.navbarData.map((element) => {
-					return <li key={element.toString()}>{element}</li>;
+				{props.navbarData.map((element, index) => {
+					return (
+						<a href={`#${element}`} key={`${element}${index}`}>
+							<li key={element.toString()}>{element}</li>
+						</a>
+					);
 				})}
 			</ul>
 		</nav>

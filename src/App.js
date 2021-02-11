@@ -5,15 +5,15 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import { navbarData } from "./data/Data";
+import { navbarData, homepageData, skillsData } from "./data/Data";
 
 const App = () => {
 	return (
 		<div id="appContainer">
 			<Navbar navbarData={navbarData}></Navbar>
 			<main id="content">
-				<Home></Home>
-				<Skills></Skills>
+				<Home homepageData={homepageData}></Home>
+				<Skills skillsData={skillsData}></Skills>
 				<Projects></Projects>
 				<Contact></Contact>
 			</main>

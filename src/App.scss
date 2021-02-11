@@ -19,6 +19,36 @@ body {
 	height: fit-content;
 }
 
+#content {
+	padding: 0 15% 0 15%;
+	#homeContent {
+		padding-top: 150px;
+		h1 {
+			font-size: 4em;
+			margin: 10px 0 10px 0;
+		}
+		h3 {
+			font-size: 1.5em;
+			margin: 15px 0 15px 0;
+		}
+
+		img {
+			height: 30px;
+			width: 30px;
+			margin-right: 15px;
+		}
+	}
+	#skillsContent {
+		h2 {
+			font-size: 3em;
+		}
+	}
+	section {
+		height: 90vh;
+		padding-top: 110px;
+	}
+}
+
 #navbarContainer {
 	background: $navbar-background-color;
 	display: flex;
@@ -39,9 +69,6 @@ body {
 		align-items: center;
 		justify-content: center;
 		transition: $transition-hover;
-		&:hover {
-			color: $navbar-hover-color2;
-		}
 	}
 
 	#logo {
@@ -89,12 +116,6 @@ body {
 
 .active {
 	display: block;
-}
-
-#content {
-	section {
-		height: 100vh;
-	}
 }
 
 @media screen and (min-width: $breakpoint-tablet) {

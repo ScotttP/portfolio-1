@@ -1,6 +1,32 @@
 import React from "react";
-const Home = () => {
-	return <section>Home!</section>;
+import linkedInIcon from "../IconsAndImages/linkedIn.svg";
+import githubIcon from "../IconsAndImages/github.svg";
+import resumeIcon from "../IconsAndImages/resume.png";
+const Home = (props) => {
+	const {
+		homepageData: { devName, devTitle, linkedIn, github, resume },
+	} = props;
+
+	return (
+		<section id="Home">
+			<div id="homeContent">
+				<h1 id="devName">{devName}</h1>
+				<h3 id="devTitle">{devTitle}</h3>
+				<a href={`${linkedIn}`} target="_blank">
+					<img src={linkedInIcon}></img>
+				</a>
+				<a href={`${github}`} target="_blank">
+					<img src={githubIcon}></img>
+				</a>
+				<a href={`${resume}`} target="_blank">
+					<img src={resumeIcon}></img>
+				</a>
+			</div>
+			<a href="#Skills">
+				<button> Arrow to next section</button>
+			</a>
+		</section>
+	);
 };
 
 export default Home;
