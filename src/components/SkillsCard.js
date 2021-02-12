@@ -4,7 +4,15 @@ const SkillsCard = (props) => {
 		skill: { skillName, skillImage },
 	} = props;
 
-	return <div>{skillName}</div>;
+	return (
+		<div className="skillsCard">
+			<div className="imageDiv">
+				<img src={skillImage} alt={skillName}></img>
+			</div>
+
+			<p>{skillName}</p>
+		</div>
+	);
 };
 
 export default SkillsCard;

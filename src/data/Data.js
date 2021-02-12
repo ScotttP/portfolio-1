@@ -1,3 +1,11 @@
+import htmlLogo from "../IconsAndImages/html.png";
+import cssLogo from "../IconsAndImages/css.png";
+import javascriptLogo from "../IconsAndImages/javascript.png";
+import reactLogo from "../IconsAndImages/react.png";
+import sassLogo from "../IconsAndImages/sass.png";
+import firebaseLogo from "../IconsAndImages/firebase.png";
+import npmLogo from "../IconsAndImages/npm.png";
+import gitLogo from "../IconsAndImages/git.png";
 export const navbarData = ["Home", "Skills", "Projects", "Contact"];
 
 export const homepageData = {
@@ -11,34 +19,34 @@ export const homepageData = {
 export const skillsData = [
 	{
 		skillName: "HTML",
-		skillImg: "",
+		skillImage: htmlLogo,
 	},
 	{
 		skillName: "CSS",
-		skillImg: "",
+		skillImage: cssLogo,
 	},
 	{
 		skillName: "Javascript",
-		skillImg: "",
+		skillImage: javascriptLogo,
 	},
 	{
 		skillName: "React",
-		skillImg: "",
+		skillImage: reactLogo,
 	},
 	{
 		skillName: "SASS/SCSS",
-		skillImg: "",
+		skillImage: sassLogo,
 	},
 	{
 		skillName: "Firebase",
-		skillImg: "",
+		skillImage: firebaseLogo,
 	},
 	{
 		skillName: "NPM",
-		skillImg: "",
+		skillImage: npmLogo,
 	},
 	{
 		skillName: "Git",
-		skillImg: "",
+		skillImage: gitLogo,
 	},
 ];
