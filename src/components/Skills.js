@@ -9,9 +9,6 @@ const Skills = (props) => {
 					return <SkillsCard skill={element}></SkillsCard>;
 				})}
 			</div>
-			<a href="#Projects">
-				<button> Arrow to next section</button>
-			</a>
 		</section>
 	);
 };

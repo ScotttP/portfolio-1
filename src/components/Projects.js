@@ -1,6 +1,16 @@
 import React from "react";
-const Projects = () => {
-	return <section id="Projects">Projects!</section>;
+import ProjectCard from "./ProjectCard";
+const Projects = (props) => {
+	return (
+		<section id="Projects">
+			<h2>Projects</h2>
+			<div id="projectsContent">
+				{props.projectsData.map((element) => {
+					return <ProjectCard project={element}></ProjectCard>;
+				})}
+			</div>
+		</section>
+	);
 };
 
 export default Projects;

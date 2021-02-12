@@ -1,5 +1,5 @@
 import React from "react";
-
+import navbarLogo from "../IconsAndImages/navbarLogo-2.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
@@ -12,7 +12,9 @@ const Navbar = (props) => {
 	return (
 		<nav id="navbarContainer">
 			<div id="logoAndToggleDiv">
-				<h2 id="logo">SP</h2>
+				<a href="#Home">
+					<img src={navbarLogo} id="logo"></img>
+				</a>
 				<span
 					className="navbarToggle"
 					id="js-navbar-toggle"
