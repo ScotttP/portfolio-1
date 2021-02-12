@@ -10,7 +10,7 @@ const SkillsCard = (props) => {
 				<img src={skillImage} alt={skillName}></img>
 			</div>
 
-			<p>{skillName}</p>
+			<b>{skillName}</b>
 		</div>
 	);
 };

@@ -1,5 +1,5 @@
-import htmlLogo from "../IconsAndImages/html.png";
-import cssLogo from "../IconsAndImages/css.png";
+import htmlLogo from "../IconsAndImages/html.svg";
+import cssLogo from "../IconsAndImages/css.svg";
 import javascriptLogo from "../IconsAndImages/javascript.png";
 import reactLogo from "../IconsAndImages/react.png";
 import sassLogo from "../IconsAndImages/sass.png";
