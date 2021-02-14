@@ -3,7 +3,8 @@ import linkedInIcon from "../IconsAndImages/linkedIn.svg";
 import githubIcon from "../IconsAndImages/github.svg";
 import resumeIcon from "../IconsAndImages/resume.png";
 import backgroundImage from "../IconsAndImages/navbarLogo-2.png";
-
+import ScrollAnimation from "react-animate-on-scroll";
+import "animate.css/animate.min.css";
 const Home = (props) => {
 	const {
 		homepageData: { devName, devTitle, linkedIn, github, resume },
@@ -24,11 +25,12 @@ const Home = (props) => {
 					<img src={resumeIcon}></img>
 				</a>
 			</div>
+
 			<div id="bgImageDiv">
 				<img id="backgroundImage" src={backgroundImage}></img>
 			</div>
-			<a href="#Skills" id="nextSectionLink">
-				<b>&#x25BC;</b>
+			<a href="#Skills" className="nextSectionLink" id="skillsSectionLink">
+				<b>&#8595;</b>
 			</a>
 		</section>
 	);

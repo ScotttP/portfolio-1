@@ -82,6 +82,11 @@ const Contact = (props) => {
 					</a>
 				</div>
 			</div>
+			<div id="homeSectionLinkDiv">
+				<a href="#Home" className="nextSectionLink" id="homeSectionLink">
+					<b>&#8593;</b>
+				</a>
+			</div>
 		</section>
 	);
 };
