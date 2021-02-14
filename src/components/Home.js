@@ -2,6 +2,8 @@ import React from "react";
 import linkedInIcon from "../IconsAndImages/linkedIn.svg";
 import githubIcon from "../IconsAndImages/github.svg";
 import resumeIcon from "../IconsAndImages/resume.png";
+import backgroundImage from "../IconsAndImages/navbarLogo-2.png";
+
 const Home = (props) => {
 	const {
 		homepageData: { devName, devTitle, linkedIn, github, resume },
@@ -22,8 +24,11 @@ const Home = (props) => {
 					<img src={resumeIcon}></img>
 				</a>
 			</div>
-			<a href="#Skills">
-				<button> Arrow to next section</button>
+			<div id="bgImageDiv">
+				<img id="backgroundImage" src={backgroundImage}></img>
+			</div>
+			<a href="#Skills" id="nextSectionLink">
+				<b>&#x25BC;</b>
 			</a>
 		</section>
 	);

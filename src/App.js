@@ -20,7 +20,7 @@ const App = () => {
 				<Home homepageData={homepageData}></Home>
 				<Skills skillsData={skillsData}></Skills>
 				<Projects projectsData={projectsData}></Projects>
-				<Contact></Contact>
+				<Contact homepageData={homepageData}></Contact>
 			</main>
 			<Footer></Footer>
 		</div>
