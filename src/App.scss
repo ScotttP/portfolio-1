@@ -41,6 +41,9 @@ body {
 	@media screen and (max-width: 800px) {
 		margin-top: 15px;
 	}
+	@media screen and (max-width: 400px) {
+		margin: 0 0 10px 0;
+	}
 }
 
 #skillsSectionLink {
@@ -349,12 +352,26 @@ body {
 
 #footer {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	color: $lightmode-background-color;
 	background-color: $navbar-background-color;
 	min-height: 60px;
 	width: 100%;
+	p {
+		margin: 10px 10px 20px 10px;
+	}
+	b {
+		margin: 20px 10px 0px 10px;
+	}
+	a {
+		text-decoration: underline;
+
+		&:visited {
+			color: white;
+		}
+	}
 }
 
 @media screen and (min-width: $breakpoint-tablet) {
