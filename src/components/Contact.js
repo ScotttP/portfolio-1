@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import linkedInIcon from "../IconsAndImages/linkedIn.svg";
 import githubIcon from "../IconsAndImages/github.svg";
-import resumeIcon from "../IconsAndImages/resume.png";
+import resumeIcon from "../IconsAndImages/resume.svg";
 const Contact = (props) => {
 	const [name, setName] = useState("");
 	const [email, setEmail] = useState("");

@@ -1,5 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
 import ProjectCard from "./ProjectCard";
+import uniqid from "uniqid";
 
 const Projects = (props) => {
 	return (
@@ -7,7 +8,7 @@ const Projects = (props) => {
 			<h2>Projects</h2>
 			<div id="projectsContent">
 				{props.projectsData.map((element) => {
-					return <ProjectCard project={element}></ProjectCard>;
+					return <ProjectCard key={uniqid()} project={element}></ProjectCard>;
 				})}
 			</div>
 			<div className=".calendar"></div>

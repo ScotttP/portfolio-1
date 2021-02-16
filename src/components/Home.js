@@ -1,10 +1,9 @@
 import React from "react";
 import linkedInIcon from "../IconsAndImages/linkedIn.svg";
 import githubIcon from "../IconsAndImages/github.svg";
-import resumeIcon from "../IconsAndImages/resume.png";
+import resumeIcon from "../IconsAndImages/resume.svg";
 import backgroundImage from "../IconsAndImages/navbarLogo-2.png";
-import ScrollAnimation from "react-animate-on-scroll";
-import "animate.css/animate.min.css";
+
 const Home = (props) => {
 	const {
 		homepageData: { devName, devTitle, linkedIn, github, resume },

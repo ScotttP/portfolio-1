@@ -1,9 +1,11 @@
 import React from "react";
+
 const ProjectCard = (props) => {
 	const {
 		project: {
 			projectName,
 			projectImage,
+			techStack,
 			projectDescription,
 			demoLink,
 			codeLink,
@@ -17,6 +19,12 @@ const ProjectCard = (props) => {
 			</div>
 
 			<p>{projectDescription}</p>
+			<h3>Tech Stack</h3>
+			<ul className="techStackList">
+				{techStack.map((skill) => (
+					<li>{skill} </li>
+				))}
+			</ul>
 			<div className="buttonDiv">
 				<a href={demoLink} target="_blank">
 					<button>Live Demo</button>
