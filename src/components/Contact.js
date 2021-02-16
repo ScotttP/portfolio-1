@@ -28,8 +28,8 @@ const Contact = (props) => {
 					id="contactForm"
 					name="contact v1"
 					method="post"
-					data-netlify="true"
 					onSubmit="submit"
+					netlify
 				>
 					<input type="hidden" name="form-name" value="contact v1" />
 					<label htmlFor="name">
