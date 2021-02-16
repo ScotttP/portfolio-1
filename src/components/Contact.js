@@ -27,10 +27,11 @@ const Contact = (props) => {
 				<form
 					id="contactForm"
 					onSubmit={(e) => submitContactForm(e)}
-					name="contact"
+					name="contact v1"
 					method="POST"
 					data-netlify="true"
 				>
+					<input type="hidden" name="form-name" value="contact v1" />
 					<label htmlFor="name">
 						Name:
 						<input
