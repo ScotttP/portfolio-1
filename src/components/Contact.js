@@ -26,44 +26,23 @@ const Contact = (props) => {
 			<div id="contactDiv">
 				<form
 					id="contactForm"
-					onSubmit="submit"
 					name="contact v1"
-					method="POST"
+					method="post"
 					data-netlify="true"
+					onSubmit="submit"
 				>
 					<input type="hidden" name="form-name" value="contact v1" />
 					<label htmlFor="name">
 						Name:
-						<input
-							id="name"
-							name="name"
-							type="text"
-							value={name}
-							// onChange={(e) => setName(e.target.value)}
-							required
-						></input>
+						<input id="name" name="name" type="text" required></input>
 					</label>
 					<label htmlFor="email">
 						Email:
-						<input
-							id="email"
-							type="email"
-							name="email"
-							value={email}
-							// onChange={(e) => setEmail(e.target.value)}
-							required
-						></input>
+						<input id="email" type="email" name="email" required></input>
 					</label>
 					<label htmlFor="subject">
 						Subject:
-						<input
-							id="subject"
-							type="text"
-							name="subject"
-							value={subject}
-							// onChange={(e) => setSubject(e.target.value)}
-							required
-						></input>
+						<input id="subject" type="text" name="subject" required></input>
 					</label>
 
 					<label htmlFor="message">
@@ -72,8 +51,6 @@ const Contact = (props) => {
 							id="message"
 							type="text"
 							name="message"
-							value={message}
-							// onChange={(e) => setMessage(e.target.value)}
 							required
 						></textarea>
 					</label>
