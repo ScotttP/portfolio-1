@@ -24,11 +24,18 @@ const Contact = (props) => {
 		<section id="Contact">
 			<h2>Contact</h2>
 			<div id="contactDiv">
-				<form id="contactForm" onSubmit={(e) => submitContactForm(e)}>
+				<form
+					id="contactForm"
+					onSubmit={(e) => submitContactForm(e)}
+					name="contact"
+					method="POST"
+					data-netlify="true"
+				>
 					<label htmlFor="name">
 						Name:
 						<input
 							id="name"
+							name="name"
 							type="text"
 							value={name}
 							onChange={(e) => setName(e.target.value)}
@@ -40,6 +47,7 @@ const Contact = (props) => {
 						<input
 							id="email"
 							type="email"
+							name="email"
 							value={email}
 							onChange={(e) => setEmail(e.target.value)}
 							required
@@ -50,6 +58,7 @@ const Contact = (props) => {
 						<input
 							id="subject"
 							type="text"
+							name="subject"
 							value={subject}
 							onChange={(e) => setSubject(e.target.value)}
 							required
@@ -61,6 +70,7 @@ const Contact = (props) => {
 						<textarea
 							id="message"
 							type="text"
+							name="message"
 							value={message}
 							onChange={(e) => setMessage(e.target.value)}
 							required
