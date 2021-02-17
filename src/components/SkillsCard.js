@@ -7,7 +7,7 @@ const SkillsCard = (props) => {
 	return (
 		<div className="skillsCard">
 			<div className="imageDiv">
-				<img src={skillImage} alt={skillName}></img>
+				<img src={skillImage} alt={`${skillName} Logo`}></img>
 			</div>
 
 			<b>{skillName}</b>

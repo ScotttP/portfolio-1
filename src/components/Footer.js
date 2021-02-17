@@ -9,6 +9,15 @@ const Footer = () => {
 					Icons8
 				</a>
 			</p>
+			<p>
+				Logo by {""}
+				<a
+					href="https://www.linkedin.com/in/griffinmcdonald15/"
+					target="_blank"
+				>
+					Griffin McDonald
+				</a>
+			</p>
 		</div>
 	);
 };

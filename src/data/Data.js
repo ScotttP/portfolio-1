@@ -70,7 +70,11 @@ export const projectsData = [
 	{
 		projectName: "Shopping Cart",
 		projectImage: shoppingCartApp,
-		projectDescription: `This is an "eCommerce" website to imitate the Taylormade golf website. I used firebase for the backend to fetch and display the users cart information as well as products from the database. Users can add and delete items to their cart and I've implemented a complete checkout process to imitate an actual checkout process. I used React Router to display item specific pages. Please note: no card information will be stored and this won't actually prcoess a payment.`,
+		projectDescription: `This is an "eCommerce" website to imitate the Taylormade golf website. 
+		I used firebase for the backend to fetch and display the users cart information as well as products from the database. 
+		Users can add and delete items to their cart and I've implemented a complete checkout process to imitate an actual checkout process. 
+		I used React Router to display item specific pages. 
+		PLEASE NOTE: no bank account information will be stored and the process for payment is disabled.`,
 		techStack: ["HTML", "CSS", "React", "React Router", "Firebase"],
 		demoLink: "https://scotttp.github.io/shopping-cart/#/",
 		codeLink: "https://github.com/ScotttP/shopping-cart",

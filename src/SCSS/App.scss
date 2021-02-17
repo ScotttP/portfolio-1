@@ -41,7 +41,7 @@ body {
 	@media screen and (max-width: 800px) {
 		margin-top: 15px;
 	}
-	@media screen and (max-width: 400px) {
+	@media screen and (max-width: 425px) {
 		margin: 0 0 10px 0;
 	}
 }
@@ -64,6 +64,7 @@ body {
 	justify-content: space-between;
 	@media screen and (max-width: 425px) {
 		flex-direction: column;
+		justify-content: space-evenly;
 	}
 }
 
@@ -78,9 +79,8 @@ body {
 		width: 100%;
 	}
 	@media screen and (max-width: 425px) {
-		display: flex;
-		height: 500px;
-		width: 350px;
+		height: auto;
+		width: auto;
 	}
 }
 
@@ -217,7 +217,10 @@ body {
 			display: grid;
 			justify-self: center;
 			align-self: center;
-			min-height: 420px;
+			min-height: 300px;
+			@media screen and (min-width: 1340px) {
+				min-height: 500px;
+			}
 		}
 		img {
 			width: 100%;
@@ -227,11 +230,19 @@ body {
 		}
 		b {
 			margin: 20px;
+			text-align: center;
+		}
+		@media screen and (max-width: $breakpoint-tablet) {
+			min-height: 400px;
 		}
 	}
+	@media screen and (max-width: $breakpoint-tablet) {
+		grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
+		grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	}
 	@media screen and (max-width: 425px) {
-		grid-template-rows: repeat(auto-fill, minmax(300px, 1fr));
-		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+		grid-template-rows: repeat(auto-fill, minmax(150px, 1fr));
+		grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
 	}
 }
 
@@ -255,12 +266,16 @@ body {
 	h3 {
 		text-align: center;
 		margin-bottom: 25px;
+		@media screen and (max-width: 618px) {
+			margin-bottom: 15px;
+		}
 	}
 	p {
-		margin: 15px 0 15px 0;
+		margin: 15px 0 5px 0;
 		min-height: 130px;
 		@media screen and (max-width: 618px) {
 			font-size: 0.8em;
+			min-height: 100px;
 		}
 	}
 	.buttonDiv {
@@ -310,7 +325,6 @@ body {
 
 #contactForm {
 	height: fit-content;
-	// min-height: 80vh;
 	width: 50%;
 	display: flex;
 	flex-direction: column;
@@ -327,6 +341,7 @@ body {
 			line-height: 1.5em;
 			padding: 5px;
 			margin-top: 10px;
+			border: 1px solid $navbar-background-color;
 		}
 	}
 	textarea {
@@ -337,6 +352,7 @@ body {
 		resize: none;
 		padding: 5px;
 		margin-top: 10px;
+		border: 1px solid $navbar-background-color;
 	}
 	button {
 		width: 100%;
@@ -359,15 +375,20 @@ body {
 	background-color: $navbar-background-color;
 	min-height: 60px;
 	width: 100%;
+	padding: 15px;
 	p {
-		margin: 10px 10px 20px 10px;
+		font-size: 0.8em;
+		margin: 5px;
 	}
 	b {
-		margin: 20px 10px 0px 10px;
+		margin: 5px;
+		@media screen and (max-width: 350px) {
+			font-size: 0.9em;
+		}
 	}
 	a {
 		text-decoration: underline;
-
+		color: white;
 		&:visited {
 			color: white;
 		}
@@ -442,5 +463,20 @@ body {
 	}
 	#contactForm {
 		width: 100%;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.techStackList {
+		flex-direction: column;
+		align-items: center;
+	}
+	.projectCard {
+		h3 {
+			margin-bottom: 15px;
+		}
+		p {
+			min-height: 100px;
+		}
 	}
 }

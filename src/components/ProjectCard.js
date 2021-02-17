@@ -1,4 +1,5 @@
 import React from "react";
+import uniqid from "uniqid";
 
 const ProjectCard = (props) => {
 	const {
@@ -22,7 +23,7 @@ const ProjectCard = (props) => {
 			<h3>Tech Stack</h3>
 			<ul className="techStackList">
 				{techStack.map((skill) => (
-					<li>{skill} </li>
+					<li key={uniqid()}>{skill} </li>
 				))}
 			</ul>
 			<div className="buttonDiv">
