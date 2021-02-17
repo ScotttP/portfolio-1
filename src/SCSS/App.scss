@@ -231,15 +231,6 @@ body {
 	}
 }
 
-@media screen and (max-width: 800px) {
-	#contactDiv {
-		flex-direction: column;
-	}
-	#contactForm {
-		width: 100%;
-	}
-}
-
 @media screen and (max-width: 550px) {
 	.techStackList {
 		flex-direction: column;
