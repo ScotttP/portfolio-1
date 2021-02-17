@@ -1,6 +1,7 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
 import uniqid from "uniqid";
+import "../SCSS/Projects.scss";
 
 const Projects = (props) => {
 	return (

@@ -1,0 +1,31 @@
+@import "_variables.scss";
+
+#footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: $lightmode-background-color;
+	background-color: $navbar-background-color;
+	min-height: 60px;
+	width: 100%;
+	padding: 15px;
+	p {
+		font-size: 0.8em;
+		margin: 5px;
+		color: $footer-link-text-color;
+	}
+	b {
+		margin: 5px;
+		@media screen and (max-width: 350px) {
+			font-size: 0.9em;
+		}
+	}
+	a {
+		text-decoration: underline;
+		color: $footer-link-text-color;
+		&:visited {
+			color: $footer-link-text-color;
+		}
+	}
+}

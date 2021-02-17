@@ -13,7 +13,8 @@ const Navbar = (props) => {
 		<nav id="navbarContainer">
 			<div id="logoAndToggleDiv">
 				<a href="#Home">
-					<img src={navbarLogo} id="logo"></img>
+					{""}
+					<img alt="logo" src={navbarLogo} id="logo"></img>
 				</a>
 				<span
 					className="navbarToggle"
@@ -27,9 +28,11 @@ const Navbar = (props) => {
 			<ul className="mainNavbar" id="menu">
 				{props.navbarData.map((element, index) => {
 					return (
-						<a href={`#${element}`} key={`${element}${index}`}>
-							<li key={element.toString()}>{element}</li>
-						</a>
+						<li key={element.toString()}>
+							<a href={`#${element}`} key={`${element}${index}`}>
+								{element}
+							</a>
+						</li>
 					);
 				})}
 			</ul>

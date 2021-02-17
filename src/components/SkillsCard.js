@@ -1,4 +1,5 @@
 import React from "react";
+import "../SCSS/Skills.scss";
 const SkillsCard = (props) => {
 	const {
 		skill: { skillName, skillImage },

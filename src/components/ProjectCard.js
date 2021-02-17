@@ -1,5 +1,6 @@
 import React from "react";
 import uniqid from "uniqid";
+import "../SCSS/Projects.scss";
 
 const ProjectCard = (props) => {
 	const {
