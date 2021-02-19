@@ -23,7 +23,7 @@
 			display: grid;
 			justify-self: center;
 			align-self: center;
-			min-height: 300px;
+			min-height: 225px;
 			@media screen and (min-width: 1340px) {
 				min-height: 500px;
 			}
@@ -39,7 +39,10 @@
 			text-align: center;
 		}
 		@media screen and (max-width: $breakpoint-tablet) {
-			min-height: 400px;
+			min-height: 300px;
+		}
+		@media screen and (max-width: 415px) {
+			padding: 0px 10px 0px 10px;
 		}
 	}
 	@media screen and (max-width: $breakpoint-tablet) {

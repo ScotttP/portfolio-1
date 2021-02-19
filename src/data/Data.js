@@ -70,11 +70,8 @@ export const projectsData = [
 	{
 		projectName: "Shopping Cart",
 		projectImage: shoppingCartApp,
-		projectDescription: `This is an "eCommerce" website to imitate the Taylormade golf website. 
-		I used firebase for the backend to fetch and display the users cart information as well as products from the database. 
-		Users can add and delete items to their cart and I've implemented a complete checkout process to imitate an actual checkout process. 
-		I used React Router to display item specific pages. 
-		PLEASE NOTE: no bank account information will be stored and the process for payment is disabled.`,
+		projectDescription: `This is an eCommerce website made to imitate the TaylorMade golf website. I used Firebase for the backend to fetch and display the list of products for sale, as well as the user’s cart information. User’s are able to add and remove items from their cart and can go through the checkout process when they are done shopping.\
+        PLEASE NOTE: No bank account information will be stored, and the process for payment is disabled.`,
 		techStack: ["HTML", "CSS", "React", "React Router", "Firebase"],
 		demoLink: "https://scotttp.github.io/shopping-cart/#/",
 		codeLink: "https://github.com/ScotttP/shopping-cart",
@@ -83,7 +80,7 @@ export const projectsData = [
 		projectName: "Restaurant Page",
 		projectImage: restaurantPageApp,
 		projectDescription:
-			"This is a restuarant landing page for a local restaurant in my area. This was my first time implementing SASS and really enjoyed learning the basics and implementing a good foundational knowledge of the framework",
+			"This is a landing page for one of my favorite local restaurants. This was my first time using SASS, and I really enjoyed learning the basics and instilling good foundational knowledge of the framework.",
 		techStack: ["HTML", "SCSS/SASS", "React"],
 		demoLink: "https://scotttp.github.io/tekela-restaurant-page/",
 		codeLink: "https://github.com/ScotttP/tekela-restaurant-page",
@@ -93,7 +90,7 @@ export const projectsData = [
 		projectName: "Todo App w/Firebase",
 		projectImage: todoApp,
 		projectDescription:
-			"This is a simple  CRUD Todo App but with a bit more complexity and customization for my particular use during my current day job. This was my first time using Firebase; I implemented their user authentication methods and utilized firestore, their NOSQL database.",
+			"This is a simple CRUD to-do app, but with a bit more complexity and customization for my particular use at my current day job. I’m able to create tasks for myself, input due dates and set a priority level for each task so I can filter by which tasks are the most important. This was my first time using Firebase; I implemented their user-authentication methods and utilized Firestore, their NOSQL database to handle user-specific data.",
 		techStack: ["HTML", "CSS", "React", "React Router", "Firebase"],
 		demoLink: "https://todo-list-2-c0d05.web.app/?#/Login",
 		codeLink: "https://github.com/ScotttP/todo-list-2",
@@ -101,7 +98,7 @@ export const projectsData = [
 	{
 		projectName: "Weather App",
 		projectImage: weatherApp,
-		projectDescription: `This is a Weather app that fetches data from the OpenWeatherAPI. Users are able to search for a specific city in the search box and find that cities current weather. Users can also click the "get current location" button and that fires off the goelocation API. Users can also save cities to their favorites list (using localStorage) so they don't have search for a commonly used city. `,
+		projectDescription: `This is a live weather app that fetches data from the OpenWeatherAPI. Users are able to use the search box to find any city and the API pulls the data and displays live information. Users can also utilize the “get current location” feature to fire off the geolocation API and find the weather data for their exact location. I also added a feature using localStorage that enables users to create a list of favorite cities for easy reference. `,
 		techStack: ["HTML", "CSS", "React", "Styled Components", "3rd Party API"],
 		demoLink: "https://scotttp.github.io/weather-app-3/",
 		codeLink: "https://github.com/ScotttP/weather-app-3",
