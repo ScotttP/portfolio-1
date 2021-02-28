@@ -12,6 +12,7 @@ import shoppingCartApp from "../IconsAndImages/shoppingCartApp.png";
 import restaurantPageApp from "../IconsAndImages/restaurantPageApp.png";
 import weatherApp from "../IconsAndImages/weatherApp.png";
 import todoApp from "../IconsAndImages/todoApp.png";
+import resume from "../ScottPribeResume.pdf";
 
 export const navbarData = ["Home", "Skills", "Projects", "Contact"];
 
@@ -20,7 +21,7 @@ export const homepageData = {
 	devTitle: "Front-End Developer",
 	linkedIn: "https://www.linkedin.com/in/scottpribe/",
 	github: "https://github.com/ScotttP",
-	resume: "",
+	resume: resume,
 };
 
 export const skillsData = [

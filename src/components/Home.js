@@ -21,9 +21,9 @@ const Home = (props) => {
 				<a href={`${github}`} target="_blank">
 					<img alt="githubLogo" src={githubIcon}></img>
 				</a>
-				{/* <a href={`${resume}`} target="_blank">
+				<a href={`${resume}`} target="_blank">
 					<img src={resumeIcon}></img>
-				</a> */}
+				</a>
 			</div>
 
 			<div id="bgImageDiv">

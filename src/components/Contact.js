@@ -7,6 +7,7 @@ const Contact = (props) => {
 	const {
 		homepageData: { linkedIn, github, resume },
 	} = props;
+	console.log(resume);
 	return (
 		<section id="Contact">
 			<h2>Contact</h2>
@@ -46,9 +47,9 @@ const Contact = (props) => {
 					<a href={`${github}`} target="_blank">
 						<img alt="linkedInLogo" src={githubIcon}></img>
 					</a>
-					{/* <a href={`${resume}`} target="_blank">
+					<a href={`${resume}`} target="_blank">
 						<img src={resumeIcon}></img>
-					</a> */}
+					</a>
 				</div>
 			</div>
 			<div id="homeSectionLinkDiv">
